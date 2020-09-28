@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ServiceTrackerCMD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ServiceTrackerCMD_jar</output-path>
+    <root id="archive" name="ServiceTrackerCMD.jar">
+      <element id="module-output" name="ServiceTrackerCMD" />
+    </root>
+  </artifact>
+</component>
