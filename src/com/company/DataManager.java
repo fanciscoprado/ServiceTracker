@@ -9,7 +9,7 @@ public class DataManager {
         ArrayList<Car> list = new ArrayList<Car>();
         //add loading function here
         try {
-            FileInputStream fis = new FileInputStream("employee.ser");
+            FileInputStream fis = new FileInputStream("CSTSave.ser");
             System.out.println("h");
             try (ObjectInputStream input = new ObjectInputStream(fis)) {
                 list = (ArrayList<Car>) input.readObject();
@@ -27,7 +27,7 @@ public class DataManager {
     public void saveData(ArrayList<Car> list){
         try {
             FileOutputStream fileOut =
-                    new FileOutputStream("employee.ser");
+                    new FileOutputStream("CSTSave.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
 
                 out.writeObject(list);
